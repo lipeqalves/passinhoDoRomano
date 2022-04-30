@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Passinho do Romano</title>
+</head>
+<body>
+    <form action="" method="post">
+        <div class = "escolheCodificacao">
+            <input type="radio" name = "selCodificacao" value="cifra-cezar"/>Cifra de Cezar
+            <input type="radio" name = "selCodificacao" value="base64" />Base 64
+            <input type="button" id="selCezar64" value="Escolher" />
+            
+        </div><br>
+        <div>
+            <label for="textarea">Digite sua mensagem: </label>
+            <input type="textarea" id="textarea" />
+            <input type="button" id="enviaTexto" value="Enviar"/> 
+        </div><br>
+        
+        <div>
+            <input type="button" value="Codificar">
+            <input type="button" value="Decodificar">
+        </div>
+        <p>Mensagem Codificada/Decodificada</p>
+    </form>
+
+    <script src="./index.js"></script>
+</body>
+</html>
