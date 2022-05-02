@@ -16,16 +16,17 @@
             
         </div><br>
         <div>
-            <label for="textarea">Digite sua mensagem: </label>
-            <input type="textarea" id="textarea" />
-            <input type="button" id="enviaTexto" value="Enviar"/> 
-        </div><br>
-        
+            <input type="textarea" id="entradaMsg" placeholder="Mensagem Entrada"/>
+            <input type="button" value="Codificar" id="codificar"/>
+            <input type="textarea"  id="saidaMsg" placeholder="Mensagem Codificada"/>
+            <input type="button" value="Decodificar" id="decodificar"/>        
         <div>
-            <input type="button" value="Codificar">
-            <input type="button" value="Decodificar">
+            <input type="button" value="Codificar" id="codificar">
+            <input type="button" value="Decodificar" id="decodificar">
         </div>
-        <p>Mensagem Codificada/Decodificada</p>
+        <div class="msgCodificada msgDecodificada">
+            <p id="msg">Mensagem Codificada/Decodificada</p>
+        </div>
     </form>
 
     <script src="./index.js"></script>
