@@ -2,7 +2,6 @@
 var escolheTipo = document.querySelector('#selCezar64');
 
 escolheTipo.addEventListener('click', function(){
-
     var radios = document.getElementsByName("selCodificacao");
     for (var i = 0; i < radios.length; i++) {
         if (radios[i].checked && radios[i].value == 'cifra-cezar'){ 
@@ -16,6 +15,10 @@ escolheTipo.addEventListener('click', function(){
                 incremento.innerText = cifraDeCezar();
             }else if(radios[i].checked && radios[i].value == 'base64'){
                 //document.write("Escolheu: " + radios[i].value);
+                var paragrafo = document.createElement('p');
+                var selDiv = document.querySelector(".escolheCodificacao");
+                selDiv.append(paragrafo)
+                paragrafo.innerText = " Digite texto para codificar/decodifica: ";
                 codBase64()
             } 
     }
@@ -32,7 +35,7 @@ btnCodificar.addEventListener('click',function(){
     paragrafo1.innerText = ("Mensagem Codificada:");
     selDiv.append(paragrafo2);
     paragrafo2.innerText = cifraDeCezarCodifica();
-})
+});
 var btnDecodificar = document.querySelector("#decodificar")
     btnDecodificar.addEventListener('click',function(){
     var novaMsg = document.querySelector("#msg");
@@ -45,7 +48,7 @@ var btnDecodificar = document.querySelector("#decodificar")
     selDiv.append(paragrafo2);
     paragrafo2.innerText = cifraDeCezarDecodifica();
     
-})
+});
 }
 function cifraDeCezarCodifica(){
     var mensagem = "abcdefghi".toUpperCase()
