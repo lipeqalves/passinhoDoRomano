@@ -20,7 +20,8 @@
     });
 
     function cifraDeCesarCodifica(mensagem, key){
-        mensagem.toUpperCase;
+       mensagem = mensagem.toUpperCase();
+       key = parseInt(key);
         var novaMensagem = "";
         for(var i=0; i<mensagem.length; i++){
             var codMensagem = ((mensagem.charCodeAt(i) - 65) + key)%26 + 65;
@@ -29,11 +30,11 @@
         return novaMensagem;
     }   
     function cifraDeCesarDecodifica(mensagem, key){
-        mensagem.toUpperCase();
-        //var key = 1;
+        mensagem = mensagem.toUpperCase();
+        key = parseInt(key);
         var novaMensagem = "";
         for(var i=0; i<mensagem.length; i++){
-            var codMensagem = ((mensagem.charCodeAt(i) - 65) + (26-key))%26 + 65;
+            var codMensagem = ((mensagem.charCodeAt(i) - 65) + (26 - key))%26 + 65;
             novaMensagem += `${String.fromCharCode(codMensagem)}`;
         }
          return novaMensagem;

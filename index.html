@@ -8,22 +8,22 @@
     <title>Passinho do Romano</title>
 </head>
 <body>
-    <form action="" method="post">
+    <form action="" method="post" id="conteiner">
         <div class = "escolheCodificacao">
             <input type="radio" name = "selCodificacao" value="cifra-cezar"/>Cifra de Cesar
             <input type="radio" name = "selCodificacao" value="base64" />Base 64
             <input type="button" id="selCezar64" value="Escolher" />   
-        </div><br>
+        </div>
 
         <div>
-            <input type="button" value="Codificar">
-            <input type="button" value="Decodificar">
+            <input type="button" id ="codificar" value="Codificar">
+            <input type="button" id ="decodificar" value="Decodificar">
         </div>
         <div>
-            <input type="text" id="entradaMsg" placeholder="Mensagem Entrada">
-            <input type="button" value="Codifica/Decodifica">
-            <input type="text" id="saidaMsg" placeholder="Mensagem Codificada">
+            <input type="text" id="entradaMsg" class="text-input" placeholder="Mensagem Entrada">
+            <input type="text" id="saidaMsg" class="text-input" placeholder="Mensagem Codificada">
         </div>
+        <input type="button" value="Codifica/Decodifica">
 
     </form>
 

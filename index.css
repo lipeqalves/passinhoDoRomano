@@ -7,6 +7,7 @@
     width:120px;
     height:50px;
     border-radius: 20px;
+    text-align: center;
   }
 body{
     margin-top: 5%;
@@ -29,14 +30,14 @@ body{
     justify-content: center;
     align-items: center;
 }
-.base_64{
+.base_64, .cesar, .escolheCodificacao{
     padding: 10px;
-    
     flex-direction: row;
     display:flex;
     justify-content: center;
     align-items: center;
-}
+    
+} 
 .msg{
     
     padding: 10px;
@@ -45,16 +46,6 @@ body{
     justify-content: center;
     align-items: center;
 }
-#entradaMsg{
-    margin: 5px;
-   
-}
-#saidaMsg{
-    margin: 5px;
-}
-#codificar{
-    margin: 8px;
-}
-#decodificar{
+#entradaMsg, #saidaMsg, #codificar, #decodificar{
     margin: 5px;
 }

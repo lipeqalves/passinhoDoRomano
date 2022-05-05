@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,24 +8,26 @@
     <link rel="stylesheet" href="../index.css">
     <title>Cifra de Cesar</title>
 </head>
+
 <body>
-    <form action="" method="post">
-        <div class = "cesar">
-            <h1>Cifra de Cesar</h1>
-            <input type="text" id="chave"  placeholder="chave codificação">
+    <form action="" method="post" id="conteiner">
+
+        <h1>Cifra de Cesar</h1>
+        <input type="text" id="chave" class="text-input"
+        class="text-input" placeholder="chave codificação">
+
+
+        <div class="msg">
+            <input type="text" id="entradaMsg" class="text-input" placeholder="Mensagem Entrada">
+            <input type="text" id="saidaMsg" class="text-input" placeholder="mensagem codificada">
         </div>
-        <div>
-            <input type="button" id ="codificar" value="Codificar">
-            <input type="button" id ="decodificar" value="Decodificar">
+        <div class="cesar">
+            <input type="button" id="codificar" value="Codificar">
+            <input type="button" id="decodificar" value="Decodificar">
         </div>
-        <div>
-            <input type="text" id="entradaMsg"  placeholder="Mensagem Entrada">
-            <input type="button" value="Codifica/Decodifica">
-            <input type="text" id="saidaMsg"  placeholder="mensagem codificada">
-        </div>
+        <input type="button" value="Codifica/Decodifica">
     </form>
     <script src="./cifraDeCesar.js"></script>
 </body>
+
 </html>
-
-
