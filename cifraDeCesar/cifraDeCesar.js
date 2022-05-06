@@ -39,3 +39,12 @@
         }
          return novaMensagem;
     }
+
+var escolheTipo = document.querySelector('#inicio');
+
+escolheTipo.addEventListener('click', function(){
+    
+
+    window.location.assign("../index.html");
+
+});

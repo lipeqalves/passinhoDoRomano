@@ -9,12 +9,15 @@
 </head>
 <body>
     <form action="" method="post" id="conteiner">
-        <div class = "escolheCodificacao">
-            <input type="radio" name = "selCodificacao" value="cifra-cezar"/>Cifra de Cesar
-            <input type="radio" name = "selCodificacao" value="base64" />Base 64
-            <input type="button" id="selCezar64" value="Escolher" />   
-        </div>
 
+        <h1>Escolha um Cripitografia</h1>
+
+        <div class = "escolheCodificacao">
+            <input type="radio" name = "selCodificacao" value="cifra-cezar" class="selecao"/>Cifra de Cesar
+            <input type="radio" name = "selCodificacao" value="base64" class="selecao"/>Base 64  
+        </div>
+        <input type="button" id="selCezar64" value="Escolher" />
+<!--
         <div>
             <input type="button" id ="codificar" value="Codificar">
             <input type="button" id ="decodificar" value="Decodificar">
@@ -26,7 +29,7 @@
         <input type="button" value="Codifica/Decodifica">
 
     </form>
-
+-->
     <script src="./index2.js"></script>
     <!-- <script src="./index.js"></script>  -->
 </body>
