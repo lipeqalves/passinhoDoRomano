@@ -1,4 +1,5 @@
 # Sprint Passinho Do Romano
+
  A aplicação que será desenvolvida consiste em um codificador/decodificador de cifra de
 césar e base64, vamos montar um formulário onde nosso usuário pode se sentir como
 se estivesse na Roma antiga cifrando e decifrando mensagens, com a vantagem do
@@ -10,7 +11,7 @@ decodificar mensagens utilizando cifra de césar e base64.
 ➔ Utilize seus conhecimentos de HTML, CSS e JavaScript, com foco em manipulação
 de DOM, para conceber uma aplicação que esteja de acordo com os requisitos.
 
-## Requisitos:
+## Requisitos ':'
 
 ● Sua aplicação deve ser capaz de codificar e decodificar mensagens utilizando
 tanto base64 quanto cifra de césar.
@@ -37,4 +38,3 @@ Mensagem!"
 ■ Um outro campo textual deve ser utilizado na página para que o
 resultado da codificação e decodificação possa ser exibido para a
 pessoa usuária.
-
